@@ -1,5 +1,15 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(51, 62, 68);
+    border-bottom: 5px solid #b8c14f;
+    color: #ececec;
+    padding: 0.5rem 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
 }

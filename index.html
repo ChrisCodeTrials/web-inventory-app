@@ -3,13 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies-R-Us Application</title>
+    <title>Movie-Rentals-R-Us Application</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script defer src="./scripts/main.js"></script>
 </head>
 <body>
     <header>
-        <h1>Movies-R-Us</h1>
+        <h1>Movie-Rentals-R-Us</h1>
     </header>
+    <main>
+        <section class="new-contact-form">
+            <h2>Add a Movie</h2>
+            <form id="new-movie">
+              <label for="title"
+                >Movie Title:<span class="required">*</span>
+                <input id="title" name="title" type="text" required/>
+                </label>
+                
+              <label for="director"
+                >Directed By:
+                <input id="director" name="director" type="text" required/>
+              </label>
+                
+              <label for="release-date"
+                >Release Date:
+                <input id="release-date" name="release-date" type="date" required/>
+              </label>
+              
+              <label for="movie-cover">
+                Movie Cover URL:
+                <input type="text">
+              </label>
+    
+              <label for="stock">Availability</label>
+              <select name="stock" id="stock" required>
+                <option value="">--Select--</option>
+                <option value="in-stock">In-Stock</option>
+                <option value="out-of-stock">Out Of Stock</option>
+              </select>
+    
+              <button type="submit">Add Movie</button>
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2>All Movies</h2>
+            <ul>
+                <li class="single-movie">
+                  <h3><img src="https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTItMmU2MzJjNTg1NjY0XkEyXkFqcGdeQXVyNjQ1MTMzMDQ@._V1_.jpg" width="200" alt="Drive Movie Cover"></h3>
+                  <p><strong>Movie Title: </strong>Drive</p>
+                  <p><strong>Directed By: </strong>Nicholas Winding Refn</p>
+                  <p><strong>Release Date: </strong> 09/16/2011</p>
+                  <button class="stock-value">In-Stock</button>
+                  <button>Remove Movie</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="single-movie">
+                  <h3><img src="https://www.miramax.com/assets/Pulp-Fiction1.png" width="200" alt="Pulp Fiction Movie Cover"></h3>
+                  <p><strong>Movie Title: </strong>Pulp Fiction</p>
+                  <p><strong>Directed By: </strong>Quentin Tarantino</p>
+                  <p><strong>Release Date: </strong> 10/14/1994</p>
+                  <button class="stock-value">In-Stock</button>
+                  <button>Remove Movie</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="single-movie">
+                  <h3><img src="https://m.media-amazon.com/images/M/MV5BN2IwYzc4MjEtMzJlMS00MDJlLTkzNDAtN2E4NGNkZjg0MDgxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg" width="200" alt="The Room Movie Cover"></h3>
+                  <p><strong>Movie Title: </strong>The Room</p>
+                  <p><strong>Directed By: </strong>Tommy Wiseau</p>
+                  <p><strong>Release Date: </strong> 06/27/2003</p>
+                  <button class="stock-value">Out Of Stock</button>
+                  <button>Remove Movie</button>
+                </li>
+            </ul>
+            <ul>
+                <li class="single-movie">
+                  <h3><img src="https://upload.wikimedia.org/wikipedia/en/1/14/Adventures_of_shark_boy_and_lava_girl_poster.jpg" width="200" alt="Sharkboy and Lavagirl Movie Cover"></h3>
+                  <p><strong>Movie Title: </strong>The Adventures of Sharkboy and Lavagirl in 3-D</p>
+                  <p><strong>Directed By: </strong>Robert Rodriguez</p>
+                  <p><strong>Release Date: </strong>06/10/2005</p>
+                  <button class="stock-value">Out Of Stock</button>
+                  <button>Remove Movie</button>
+                </li>
+            </ul>
+        </section>        
+    </main>
 </body>
 </html>
