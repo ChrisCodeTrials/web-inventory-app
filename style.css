@@ -8,16 +8,17 @@ body {
 header {
     background: rgb(51, 62, 68);
     border-bottom: 5px solid #feaf41;
-    color: #ececec;
+    color: #ffe3a0;
     padding: 0.5rem 15%;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
 }
 
-h1 {
+h1,
+h2 {
     font-family: helvetica;
-    text-shadow: #feaf41 1px 0 10px;
+    text-shadow: #fee3be 1px 0 10px;
 }
 main {
     display: grid;
@@ -56,6 +57,14 @@ label {
     display: grid;
     margin: 0 auto;
 
+}
+
+h2 {
+    color: #fee3be;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5%;
+    width: 350px;
 }
 
 @media (max-width: 750px){

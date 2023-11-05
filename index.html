@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie-Rentals-R-Us Application</title>
+    <title>Movies-R-Us Application</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script defer src="./scripts/main.js"></script>
     <script defer src="./scripts/helpers.js"></script>
 </head>
 <body>
     <header>
-        <h1>Movie-Rentals-R-Us</h1>
+        <h1>Movies-R-Us</h1>
     </header>
     <main>
         <section class="new-movie">
             <h2>Add a Movie</h2>
             <form id="new-movie">
               <label for="title"
-                ><strong>Movie Title:</strong><span class="required">*</span>
+                ><strong>Movie Title:</strong><span class="required"></span>
                 <input id="title" name="title" type="text" required/>
                 </label>
                 
@@ -33,7 +33,22 @@
               
               <label for="cover">
                 <strong>Movie Cover URL:</strong>
-                <input id="cover" name="cover" type="text">
+                <input id="cover" name="cover" type="text" required>
+              </label>
+
+              <label for="genre">
+                <strong>Genre:</strong>
+                <input id="genre" name="genre" type="text" required>
+              </label>
+
+              <label for="rating">
+                <strong>IMDB Rating:</strong>
+                <input id="rating" name="rating" type="text" required>
+              </label>
+
+              <label for="price">
+                <strong>Price:</strong>
+                <input id="price" name="price" type="number" required>
               </label>
     
               <label for="stock"><strong>Availability</strong></label>
@@ -54,6 +69,9 @@
                   <p><strong>Movie Title: </strong>Drive</p>
                   <p><strong>Directed By: </strong>Nicholas Winding Refn</p>
                   <p><strong>Release Date: </strong> 2011-16-09</p>
+                  <p><strong>Genre: </strong> Action/Drama </p>
+                  <p><strong>IMDB Rating: </strong> 7.8⭐️/10⭐️</p>
+                  <p><strong>Price: </strong> $10</p>
                   <button class="stock">In-Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
@@ -64,6 +82,9 @@
                   <p><strong>Movie Title: </strong>Pulp Fiction</p>
                   <p><strong>Directed By: </strong>Quentin Tarantino</p>
                   <p><strong>Release Date: </strong> 1994-14-10</p>
+                  <p><strong>Genre: </strong> Crime/Drama </p>
+                  <p><strong>IMDB Rating: </strong> 8.9⭐️/10⭐️</p>
+                  <p><strong>Price: </strong> $8</p>
                   <button class="stock">In-Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
@@ -74,6 +95,9 @@
                   <p><strong>Movie Title: </strong>The Room</p>
                   <p><strong>Directed By: </strong>Tommy Wiseau</p>
                   <p><strong>Release Date: </strong> 2003-27-06</p>
+                  <p><strong>Genre: </strong> Drama </p>
+                  <p><strong>IMDB Rating: </strong> 3.6/10⭐️</p>
+                  <p><strong>Price: </strong> $50</p>
                   <button class="stock">Out-Of-Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
@@ -84,6 +108,9 @@
                   <p><strong>Movie Title: </strong>The Adventures of Sharkboy and Lavagirl in 3-D</p>
                   <p><strong>Directed By: </strong>Robert Rodriguez</p>
                   <p><strong>Release Date: </strong>2005-10-06</p>
+                  <p><strong>Genre: </strong> Action/Adventure/Comedy</p>
+                  <p><strong>IMDB Rating: </strong> 3.7⭐️/10⭐️</p>
+                  <p><strong>Price: </strong> $100</p>
                   <button class="stock">Out-Of-Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
