@@ -6,56 +6,56 @@
     <title>Movie-Rentals-R-Us Application</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/helpers.js"></script>
 </head>
 <body>
     <header>
         <h1>Movie-Rentals-R-Us</h1>
     </header>
     <main>
-        <section class="new-contact-form">
+        <section class="new-movie">
             <h2>Add a Movie</h2>
             <form id="new-movie">
               <label for="title"
-                >Movie Title:<span class="required">*</span>
+                ><strong>Movie Title:</strong><span class="required">*</span>
                 <input id="title" name="title" type="text" required/>
                 </label>
                 
               <label for="director"
-                >Directed By:
+                ><strong>Directed By:</strong>
                 <input id="director" name="director" type="text" required/>
               </label>
                 
-              <label for="release-date"
-                >Release Date:
-                <input id="release-date" name="release-date" type="date" required/>
+              <label for="release"
+                ><strong>Release Date:</strong>
+                <input id="release" name="release" type="date" required/>
               </label>
               
-              <label for="movie-cover">
-                Movie Cover URL:
-                <input type="text">
+              <label for="cover">
+                <strong>Movie Cover URL:</strong>
+                <input id="cover" name="cover" type="text">
               </label>
     
-              <label for="stock">Availability</label>
+              <label for="stock"><strong>Availability</strong></label>
               <select name="stock" id="stock" required>
                 <option value="">--Select--</option>
-                <option value="in-stock">In-Stock</option>
-                <option value="out-of-stock">Out Of Stock</option>
+                <option value="In-Stock">In-Stock</option>
+                <option value="Out-Of-Stock">Out-Of-Stock</option>
               </select>
     
               <button type="submit">Add Movie</button>
             </form>
         </section>
-        <br>
-        <section>
+        <section class="all-movies">
             <h2>All Movies</h2>
             <ul>
                 <li class="single-movie">
                   <h3><img src="https://m.media-amazon.com/images/M/MV5BZjY5ZjQyMjMtMmEwOC00Nzc2LTllYTItMmU2MzJjNTg1NjY0XkEyXkFqcGdeQXVyNjQ1MTMzMDQ@._V1_.jpg" width="200" alt="Drive Movie Cover"></h3>
                   <p><strong>Movie Title: </strong>Drive</p>
                   <p><strong>Directed By: </strong>Nicholas Winding Refn</p>
-                  <p><strong>Release Date: </strong> 09/16/2011</p>
-                  <button class="stock-value">In-Stock</button>
-                  <button>Remove Movie</button>
+                  <p><strong>Release Date: </strong> 2011-16-09</p>
+                  <button class="stock">In-Stock</button>
+                  <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
             <ul>
@@ -63,9 +63,9 @@
                   <h3><img src="https://www.miramax.com/assets/Pulp-Fiction1.png" width="200" alt="Pulp Fiction Movie Cover"></h3>
                   <p><strong>Movie Title: </strong>Pulp Fiction</p>
                   <p><strong>Directed By: </strong>Quentin Tarantino</p>
-                  <p><strong>Release Date: </strong> 10/14/1994</p>
-                  <button class="stock-value">In-Stock</button>
-                  <button>Remove Movie</button>
+                  <p><strong>Release Date: </strong> 1994-14-10</p>
+                  <button class="stock">In-Stock</button>
+                  <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
             <ul>
@@ -73,9 +73,9 @@
                   <h3><img src="https://m.media-amazon.com/images/M/MV5BN2IwYzc4MjEtMzJlMS00MDJlLTkzNDAtN2E4NGNkZjg0MDgxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg" width="200" alt="The Room Movie Cover"></h3>
                   <p><strong>Movie Title: </strong>The Room</p>
                   <p><strong>Directed By: </strong>Tommy Wiseau</p>
-                  <p><strong>Release Date: </strong> 06/27/2003</p>
-                  <button class="stock-value">Out Of Stock</button>
-                  <button>Remove Movie</button>
+                  <p><strong>Release Date: </strong> 2003-27-06</p>
+                  <button class="stock">Out-Of-Stock</button>
+                  <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
             <ul>
@@ -83,9 +83,9 @@
                   <h3><img src="https://upload.wikimedia.org/wikipedia/en/1/14/Adventures_of_shark_boy_and_lava_girl_poster.jpg" width="200" alt="Sharkboy and Lavagirl Movie Cover"></h3>
                   <p><strong>Movie Title: </strong>The Adventures of Sharkboy and Lavagirl in 3-D</p>
                   <p><strong>Directed By: </strong>Robert Rodriguez</p>
-                  <p><strong>Release Date: </strong>06/10/2005</p>
-                  <button class="stock-value">Out Of Stock</button>
-                  <button>Remove Movie</button>
+                  <p><strong>Release Date: </strong>2005-10-06</p>
+                  <button class="stock">Out-Of-Stock</button>
+                  <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
         </section>        
