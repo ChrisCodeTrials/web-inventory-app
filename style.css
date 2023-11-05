@@ -3,17 +3,19 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(67, 92, 105);
-    border: 3px solid #feaf41;
+    /* border: 3px solid #feaf41; */
 }
 
 header {
     background: rgb(51, 62, 68);
     border-bottom: 5px solid #feaf41;
     color: #ffe3a0;
-    padding: 0.5rem 15%;
+    /* padding: 0.5rem 1%; */
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -124,5 +126,8 @@ h1 {
         margin: 10px auto;
         /* padding: 0; */
         display: block;
+    }
+    header {
+        width: 100%
     }
 }
