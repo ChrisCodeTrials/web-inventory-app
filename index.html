@@ -51,14 +51,15 @@
                 <input id="price" name="price" type="number" required>
               </label>
     
-              <label for="stock"><strong>Availability</strong></label>
-              <select name="stock" id="stock" required>
-                <option value="">--Select--</option>
-                <option value="In-Stock">In-Stock</option>
-                <option value="Out-Of-Stock">Out-Of-Stock</option>
-              </select>
-    
+              <label for="stock"><strong>Availability:</strong>
+                <select name="stock" id="stock" required>
+                    <option value="">--Select--</option>
+                    <option class="in-stock" value="in-stock">In Stock</option>
+                    <option class="out-of-stock" value="out-of-stock">Out Of Stock</option>
+                </select>
+              </label>
               <button type="submit">Add Movie</button>
+              <button type="reset">Reset Fields</button>
             </form>
         </section>
         <section class="all-movies">
@@ -72,7 +73,7 @@
                   <p><strong>Genre: </strong> Action/Drama </p>
                   <p><strong>IMDB Rating: </strong> 7.8⭐️/10⭐️</p>
                   <p><strong>Price: </strong> $10</p>
-                  <button class="stock">In-Stock</button>
+                  <button class="stock-value">In Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
@@ -85,20 +86,20 @@
                   <p><strong>Genre: </strong> Crime/Drama </p>
                   <p><strong>IMDB Rating: </strong> 8.9⭐️/10⭐️</p>
                   <p><strong>Price: </strong> $8</p>
-                  <button class="stock">In-Stock</button>
+                  <button class="stock-value">In Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
             <ul>
                 <li class="single-movie">
-                  <h3><img src="https://m.media-amazon.com/images/M/MV5BN2IwYzc4MjEtMzJlMS00MDJlLTkzNDAtN2E4NGNkZjg0MDgxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg" width="200" alt="The Room Movie Cover"></h3>
+                  <h3><img src="https://m.media-amazon.com/images/M/MV5BN2IwYzc4MjEtMzJlMS00MDJlLTkzNDAtN2E4NGNkZjg0MDgxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg" width="200" alt="/logo.jpeg"></h3>
                   <p><strong>Movie Title: </strong>The Room</p>
                   <p><strong>Directed By: </strong>Tommy Wiseau</p>
                   <p><strong>Release Date: </strong> 2003-27-06</p>
                   <p><strong>Genre: </strong> Drama </p>
                   <p><strong>IMDB Rating: </strong> 3.6/10⭐️</p>
                   <p><strong>Price: </strong> $50</p>
-                  <button class="stock">Out-Of-Stock</button>
+                  <button class="stock-value">Out Of Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>
@@ -111,7 +112,7 @@
                   <p><strong>Genre: </strong> Action/Adventure/Comedy</p>
                   <p><strong>IMDB Rating: </strong> 3.7⭐️/10⭐️</p>
                   <p><strong>Price: </strong> $100</p>
-                  <button class="stock">Out-Of-Stock</button>
+                  <button class="stock-value">Out Of Stock</button>
                   <button class="remove-movie">Remove Movie</button>
                 </li>
             </ul>

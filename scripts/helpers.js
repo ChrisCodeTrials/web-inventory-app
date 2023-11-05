@@ -1,7 +1,7 @@
 function generateNewMovie (title, director, release, cover, stock, genre, rating, price){
     const li = movieTemplate(title, director, release, cover, stock, genre, rating, price)
     const ul = document.querySelector('ul')
-    ul.append(li)
+    ul.prepend(li)
 }
 
 function movieTemplate(title, director, release, cover, stock, genre, rating, price){
@@ -13,20 +13,35 @@ function movieTemplate(title, director, release, cover, stock, genre, rating, pr
     removeButton.addEventListener("click", (event)=>{
         event.target.closest('.single-movie').remove()
     })
-
+  
     if (title && director && release && cover && stock && genre && rating && price){
-        li.innerHTML = `<h3><img src="${cover}" width="200" alt="${title} Movie Cover"></h3>
+        li.innerHTML = `<h3><img src="${cover}" width="200" alt="../logo.png"></h3>
         <p><strong>Movie Title: </strong>${title}</p>
         <p><strong>Directed By: </strong>${director}</p>
         <p><strong>Release Date: </strong> ${release}</p>
         <p><strong>Genre: </strong> ${genre} </p>
         <p><strong>IMDB Rating: </strong> ${rating}⭐️/10⭐️</p>
         <p><strong>Price: </strong> $${price}</p>
-        <button class="stock-value">${stock}</button>`
+        <button class="stock-value">${stock.options[stock.selectedIndex].textContent}</button>`
         li.append(removeButton)
     }
     return li
 }
+
+const stockOptions = document.querySelectorAll("ul")
+
+stockOptions.forEach((ul) => {
+  ul.addEventListener("click", (event) => {
+    if (event.target.classList.contains("stock-value")) {
+      if (event.target.textContent === "In Stock") {
+        event.target.textContent = "Out Of Stock"
+      } else if (event.target.textContent === "Out Of Stock") {
+        event.target.textContent = "In Stock"
+      }
+    }
+  })
+})
+
 
 const movieList = document.querySelectorAll("li .remove-movie")
 for (movie of movieList ){
