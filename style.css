@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(67, 92, 105);
+    border: 3px solid #feaf41;
 }
 
 header {
@@ -22,7 +23,9 @@ h2 {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 ul {
@@ -53,6 +56,7 @@ label {
     border-radius: 3%;
     box-shadow: #fee3be 5px 0 15px;
     color: rgb(51, 62, 68);
+    margin-right: 10px;
 }
 
 .single-movie img {
@@ -69,13 +73,20 @@ section label {
     color: #feaf41;
     margin-bottom: 15px;
 }
-
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    justify-self: center;
+}
 
 .single-movie button {
     background-color: rgb(99, 104, 106);
     color: #feaf41;  
     margin-bottom: 15px;
 }
+
 
 .new-movie button {
     background-color: #feaf41;
@@ -88,7 +99,12 @@ button {
     width: 150px;
     height: 40px;
 }
-
+h1 {
+    font-size: 80px;
+}
+.new-movie {
+    margin-left: 10px;
+}
 
 @media (max-width: 750px){
     main {
