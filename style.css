@@ -89,6 +89,7 @@ button {
     height: 40px;
 }
 
+
 @media (max-width: 750px){
     main {
         grid-template-columns: repeat(1, 1fr);

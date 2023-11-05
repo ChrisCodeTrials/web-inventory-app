@@ -14,8 +14,12 @@ function movieTemplate(title, director, release, cover, stock, genre, rating, pr
         event.target.closest('.single-movie').remove()
     })
   
-    if (title && director && release && cover && stock && genre && rating && price){
-        li.innerHTML = `<h3><img src="${cover}" width="200" alt="../logo.png"></h3>
+    if (title && director && release  && stock && genre && rating && price){
+        let picture = "./storeLogo.png"
+        if (cover) {
+            picture = cover
+        }
+        li.innerHTML = `<h3><img src="${picture}" width="200"></h3>
         <p><strong>Movie Title: </strong>${title}</p>
         <p><strong>Directed By: </strong>${director}</p>
         <p><strong>Release Date: </strong> ${release}</p>
