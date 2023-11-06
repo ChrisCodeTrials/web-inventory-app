@@ -1,6 +1,6 @@
 # Movies-R-Us Inventory Website
 
-Welcome to the **Movies-R-Us Inventory Website**, where employees can check/add/remove our inventory of movies. This simple web application allows you to add new movies to your inventory, view existing movies, and update their availability status. Whether you're a movie enthusiast or managing a movie rental store, we've got everything you are looking for!
+Welcome to the **Movies-R-Us Inventory Website**, where employees can check/add/remove our inventory of movies. This simple web application allows you to add new movies to our inventory, view existing movies, and update their availability status. Whether you're a movie enthusiast or managing a movie rental store, we've got everything you are looking for!
 
 ![Movies-R-Us](storeLogo.png)
 
