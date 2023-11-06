@@ -15,7 +15,7 @@ Welcome to the **Movies-R-Us Inventory Website**, where employees can check/add/
 
 ## Features
 
-- **Add a Movie:** Easily add new movies to your inventory by providing movie details such as:
+- **Add a Movie:** Easily add new movies to the inventory by providing movie details such as:
 * If a value is required, the field MUST be filled in *
 
  **Title** = (the name of the movie), **required**
@@ -38,7 +38,7 @@ Welcome to the **Movies-R-Us Inventory Website**, where employees can check/add/
 
 - **Remove Movies:** If you need to remove a movie from your inventory, use the "Remove Movie" button for quick disposal.
 
-- **Reset Fields** This option lets you clear anything typed in the lines so you can make a new movie.
+- **Reset Fields** This option lets you clear anything typed in the lines so you can add a new movie.
 
 ## Getting Started
 
